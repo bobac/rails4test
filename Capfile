@@ -27,7 +27,7 @@ Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
 require 'capistrano/bundler'
 require 'capistrano/rails'
 
-require "capistrano/scm/git"
+require 'capistrano/scm/git'
 install_plugin Capistrano::SCM::Git
 
 # If you are using rbenv add these lines:
