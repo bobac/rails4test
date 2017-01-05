@@ -3,7 +3,7 @@ set :repo_url, 'git@github.com:bobac/rails4test.git'
 
 set :deploy_to, '/home/deploy/rails4test'
 
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/secrets.yml}
 set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :deploy do
