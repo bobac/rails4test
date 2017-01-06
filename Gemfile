@@ -6,8 +6,10 @@ gem 'rails', '4.2.7.1'
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'mysql2' #musí jít do háje, až přijdu na to, jak mít v devel jinej adapter než v production
 end
 group :production do
+  gem 'sqlite3'
   gem 'mysql2'
 end
 # Use SCSS for stylesheets
